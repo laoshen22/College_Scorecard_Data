@@ -1,0 +1,87 @@
+<script src="libs/exploratory/resources/leaflet.min.js?cb=cb1557868518430"></script>
+<script src="libs/exploratory/resources/leaflet-heat.js?cb=cb1557868518430"></script>
+<script src="libs/exploratory/resources/html2canvas.min.js?cb=cb1557868518430"></script>
+<script src="libs/exploratory/resources/leaflet_export.js?cb=cb1557868518430"></script>
+<link href="libs/exploratory/resources/leaflet.css?cb=cb1557868518430" rel="stylesheet"></link>
+
+<style  type="text/css">
+/* leaflet exploratory extension */
+
+/* map legend. should be in pure css for viz share/note  */
+.leaflet-container .info.info-box {
+  color: #555;
+  padding: 8px 8px 4px 8px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.leaflet-container .info.info-box .info-box-title{
+  font-size:12px;
+  font-weight:bold;
+  overflow:hidden;
+  margin-bottom:2px;
+}
+.leaflet-container .info.info-box .info-box-table{
+  display:table;
+}
+
+.leaflet-container .info.info-box .info-box-value{
+  font-size:12px;
+  font-weight:normal;
+  display: table-row;
+}
+.leaflet-container .info.info-box .info-box-value .label-col , 
+.leaflet-container .info.info-box .info-box-value .value-col { 
+  display: table-cell; 
+  text-align:left;
+  padding-right:5px;
+}
+.leaflet-container .info.info-box .info-box-value .label-col {
+  color: #999;
+}
+
+.leaflet-container .info.legend {
+    color: #555;
+    padding: 8px 8px 4px 8px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.leaflet-container .legend .legend-row {
+  height:16px;
+  line-height:16px;
+}
+
+.leaflet-container .legend.circle .legend-row {
+  line-height:15px;
+}
+
+.leaflet-container .legend i {
+    width: 14px;
+    height: 14px;
+    float: left;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.leaflet-container .legend.circle i {
+  opacity: 0.8;
+}
+.leaflet-container .legend.square i {
+  width: 16px;
+  height: 16px;
+  border-radius: 0;
+  opacity: 0.65;
+}
+
+.leaflet-container .leaflet-popup-content-wrapper .popup-content-row {
+  display:table-row;
+}
+.leaflet-container .leaflet-popup-content-wrapper .popup-content-cell {
+  text-align:right;
+  display:table-cell;
+}
+
+/* disables all the links in the map attribution area at bottom. only for desktop */
+.leaflet-container .leaflet-control-attribution.leaflet-control a {
+  pointer-events: none;
+}
+</style>
